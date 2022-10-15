@@ -9,7 +9,7 @@ import com.prabathj.orgsrv.fallbackcalls.FiengClientFallBacks;
 
 
 
-@FeignClient(name = "employee",url = "http://localhost:9090",path = "/emp-service",fallback =FiengClientFallBacks.class )
+@FeignClient(name = "employee",url = "http://localhost:9090",path = "/emp-service" )
 public interface EmployeeService {
 
 	@GetMapping(path="/employees")

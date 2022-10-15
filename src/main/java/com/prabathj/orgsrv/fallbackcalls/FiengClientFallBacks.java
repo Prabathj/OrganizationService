@@ -12,7 +12,7 @@ import com.prabathj.orgsrv.dto.EmployeeInfo;
 import com.prabathj.orgsrv.dto.EmployeesList;
 import com.prabathj.orgsrv.fiegnclient.EmployeeService;
 
-@Component
+//@Component
 public class FiengClientFallBacks implements EmployeeService {
 
 	@Override

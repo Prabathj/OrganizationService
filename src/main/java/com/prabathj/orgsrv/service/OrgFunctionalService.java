@@ -16,7 +16,7 @@ public class OrgFunctionalService implements OrgFunctionalServiceInterface{
 	
 	@Override
 	public OrganizationInfo getOrgInfo() {
-		
+		System.err.println("Inside Service");
 		OrganizationInfo obj=new OrganizationInfo();
 		
 		ResponseEntity<EmployeesList> allEmployee = empSrv.getAllEmployee();
