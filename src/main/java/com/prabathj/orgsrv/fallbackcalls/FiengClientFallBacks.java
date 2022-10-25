@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import com.prabathj.orgsrv.dto.AddressResponse;
 import com.prabathj.orgsrv.dto.EmployeeInfo;
@@ -24,6 +25,18 @@ public class FiengClientFallBacks implements EmployeeService {
 		
 		
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(def);
+	}
+
+	@Override
+	public ResponseEntity<EmployeeInfo> getEmployeeById(int employeeId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ResponseEntity<EmployeeInfo> employeeWithName(String empName) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
