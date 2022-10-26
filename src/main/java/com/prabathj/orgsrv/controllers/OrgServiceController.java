@@ -22,7 +22,7 @@ public class OrgServiceController {
 	
 	private Logger logger=LoggerFactory.getLogger(OrgServiceController.class);
 	
-	@CircuitBreaker(name="org-info",fallbackMethod = "getOrganizationInfo_fallback" )
+	@CircuitBreaker(name="org-info")
 	@GetMapping(path = "/organization")
 	public ResponseEntity<OrganizationInfo> getOrganizationInfo(){
 		

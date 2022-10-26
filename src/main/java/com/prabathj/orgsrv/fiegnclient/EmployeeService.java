@@ -13,7 +13,8 @@ import com.prabathj.orgsrv.fallbackcalls.FiengClientFallBacks;
 
 
 
-@FeignClient(name = "employee",path="/emp-service")
+//@FeignClient(name = "employee",path="/emp-service")
+@FeignClient(name = "ORG-APIGW",path="/emp-service")
 public interface EmployeeService {
 
 	@GetMapping(path="/employees")
